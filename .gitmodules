@@ -1,0 +1,6 @@
+[submodule "algorithm/third_party/kmeans_pytorch"]
+	path = algorithm/third_party/kmeans_pytorch
+	url = git@github.com:subhadarship/kmeans_pytorch.git
+[submodule "algorithm/third_party/segment-anything"]
+	path = algorithm/third_party/segment-anything
+	url = git@github.com:facebookresearch/segment-anything.git

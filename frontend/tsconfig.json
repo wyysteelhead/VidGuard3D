@@ -1,0 +1,24 @@
+{
+  "extends": "@modern-js/tsconfig/base",
+  "compilerOptions": {
+    "declaration": false,
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@shared/*": ["./shared/*"]
+    },
+    // disable noImplicitAny
+    "noImplicitAny": false
+  },
+  "include": [
+    "src",
+    "src/.eslintrc.ts",
+    "shared",
+    "config",
+    "modern.config.ts",
+    "types.ts",
+    ".vscode/src"
+  ],
+  "exclude": ["**/node_modules"]
+}

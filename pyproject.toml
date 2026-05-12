@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61,<70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scene-risk-release"
+version = "0.1.0"
+description = "Standalone open-source release of the scene risk backend and reconstruction pipeline."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+	"flask==2.2.5",
+	"flask-cors==4.0.1",
+	"flask-socketio==5.3.6",
+	"matplotlib==3.5.3",
+	"numpy==1.21.6",
+	"numba==0.56.4",
+	"open3d==0.17.0",
+	"opencv-python==4.9.0.80",
+	"Pillow==9.5.0",
+	"plyfile==0.8.1",
+	"scikit-image==0.19.3",
+	"scikit-learn==1.0.2",
+	"scipy==1.7.3",
+	"torch==1.12.1",
+	"torchvision==0.13.1",
+	"tqdm==4.66.4",
+	"trimesh==4.4.0",
+]
+
+[project.scripts]
+scene-risk-backend = "scene_risk_release.backend:main"
+scene-risk-pipeline = "scene_risk_release.pipeline:main"
+scene-risk-prepare-assets = "scene_risk_release.prepare_assets:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

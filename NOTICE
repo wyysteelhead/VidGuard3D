@@ -1,0 +1,13 @@
+Scene Risk Release
+
+This repository includes code derived in part from SegAnyGAussians.
+
+Upstream project:
+- SegAnyGAussians
+- Licensed under the Apache License, Version 2.0
+
+This repository publishes a maintained source tree that contains project-specific
+modifications, engineering adaptations, and additional modules on top of that
+upstream basis.
+
+When redistributing this repository, retain the LICENSE file and this NOTICE.
